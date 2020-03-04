@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRSL20</title>
+    <meta name="description" content="Kazakh-Russian Sign Language Dataset">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="logo.png">K-RSL Project</div>
+		<nav>  
+			<ul>
+				<li><a href="/">Home</a>
+				<li><a href="/">Publications</a>
+				<li><a href="/">Projects</a>
+				<li><a href="/">Datasets</a>
+			</ul>
+		</nav>
+	</header>
+	<section id="title">
+		<h1>Towards Real-time Sign Language Interpreting Robot: </br>Evaluation of Non-manual Components on Recognition Accuracy</h1>
+		<br>
+		<p>Presented at Language Resources and Evaluation Conference (LREC) 2020<p>
+			<br>
+		<p>Arman Sabyrov, Medet Mukushev, Alfarabi Imashev,  Kenessary Koishybay, Vadim Kimmelman, Anara Sandygulova<p>
+		<p>Nazarbayev University, University of Bergen </p>
+	</section>
+	<section id="pageContent">
+		<img src="samples-2.jpg" width="100%">
+		<main role="main">
+			<article>
+				<h2>Overview</h2>
+				<p>The paper presents the results of the ongoing work, which aims to recognize sign language in real time. The motivation behind this work lies in the need to differentiate between similar signs that differ in non-manual components present in any sign. To this end, we recorded 5200 videos of twenty frequently used signs in Kazakh-Russian Sign Language (K-RSL), which have similar manual components but differ in non-manual components (i.e. facial expressions, eyebrow height, mouth, and head orientation). We conducted a series of evaluations in order to investigate whether non-manual components would improve sign's recognition accuracy. Among standard machine learning approaches, Logistic Regression produced the best results, 77% of accuracy for dataset with 20 signs and 77.3% of accuracy for dataset with 2 classes (statement vs question). </p>
+				<br>
+				<p>
+					Sign Language used in Kazakhstan is closely related to Russian Sign Language (RSL) like many other sign languages within Commonwealth of Independent States (CIS). The closest corpus within CIS area is the Novosibirsk State University of Technology <a href="http://rsl.nstu.ru/site/project">RSL Corpus</a>. However it has been created as a linguistic corpus for studying previously unexplored fragments of RSL, thus it is inappropriate for machine learning. The creation of the first K-RSL corpus will change the situation, and it can be used within CIS and beyond.
+				</p>
+				<br>
+				<p>
+					Given the important role of non-manual markers, in this paper we test whether including non-manual features improves recognition accuracy of signs. We focus on a specific case where two types of non-manual markers play a role, namely question signs in K-RSL. Similar to question words in many spoken languages, question signs in K-RSL can be used not only in questions <i>Who came?</i> but also in statements  <i>I know who came</i>. Thus, each question sign can occur either with non-manual question marking (eyebrow raise, sideward or backward head tilt), or without it. In addition, question signs are usually accompanied by mouthing of the corresponding  Russian/Kazakh word (e.g. <i>kto/kim</i> for "who", and <i>chto/ne</i> for "what"). While question signs are also distinguished from each other by manual features, mouthing provides extra information, which can be used in recognition. Thus, the two types of non-manual markers (eyebrow and head position vs. mouthing) can play a different role in recognition: the former can be used to distinguish statements from questions, and the latter can be used to help distinguish different question signs from each other. To this end, we hypothesize that addition of non-manual markers will improve recognition accuracy.
+				</p>
+			</article>
+			<article>
+				<h2>Download</h2>
+				<ul>
+					<li><a href="https://drive.google.com/file/d/1Gj7Vt3LmUPQwdHOhYYZD-NyE7CkvySte/view?usp=sharing">Isolated signs video files</a><br/>
+					<blockquote>There are videos of isolated signs extracted from full sentences. Videos are divided into 20 folders (10 signs in statements and questions). There are ~260 videos in each folder (40 samples for 4 signers and 100 samples for 1 signer).
+						<img src="kuda.gif" width="33%"><img src="skolko.gif" width="33%"><img src="kotoriy.gif" width="33%">
+					</blockquote>
+					</li>
+
+					<li><a href="https://drive.google.com/file/d/1dj5AvzfjPvHZoJO4j6jLdZ3KkD1YVm-z/view?usp=sharing">Openpose keypoints</a><br/> 
+					  We provide hand and face keypoints extracted with OpenPose for each video.
+					  <img src="Figure2.png" width="100%">
+					</li>
+
+					<li><a href="">Full sentence videos</a><br/> 
+					  <blockquote>
+					    Will be uploaded soon.
+					  </blockquote>
+					</li>
+					</ul>
+			</article>
+			<article>
+				<h2>Citation</h2>
+				<p>
+					* Please cite the following reference in papers using this dataset:
+				</p>
+			</article>
+			<article id="acknowledgment">
+				<h2>Acknowledgment</h2>
+				<p>This work was supported by the Nazarbayev University Faculty Development Competitive Research Grant Program 2019-2021 "Kazakh Sign Language Automatic Recognition System (K-SLARS)". Award number is 110119FD4545".</p>
+			</article>
+		</main>
+	</section>
+	<footer>
+		
+		<address>
+			Contact: <a href="mailto:me@example.com">mmukushev@nu.edu.kz</a> 
+		</address>
+	</footer>
+
+
+</body>
+
+</html>
